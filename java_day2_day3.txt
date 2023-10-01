@@ -1,0 +1,267 @@
+Day2
+
+Thursday, September 21, 2023
+10:20 AM
+
+Access modifier - public
+String- array type
+Special symbol - static
+
+Datatypes:
+Java is static typed checked.
+
+Byte -> compiler
+
+Memory section
+->head
+
+Q.) As compared to C, and C++, execution of Java is slower. But compared to Python it is faster
+But writing the code inside Python is faster
+
+Program is a business logic. 
+Program = Data + Control.
+How you want to control your data. How you will use it?
+
+JVM - it provides a Virtual Environment
+->JIT(fetching, gives code to O.S)
+
+
+	1. Static Property:
+	○ Static method are class method.
+	○ It is called by using the class name
+	
+    2. Non Static Property:
+	○ Non-static method are object method.
+	○ It is called by Object name
+
+
+In Java There is no need of Method Declaration. You can start directly with Method Definition.
+
+-----------------------------------------------------------------------------------------------------------------------
+FUNCTIONS OF SYSTEM CLASS
+	1. Println
+	2. Print
+	3. Printf
+------------------------------------------------------------------------------------------------------------------------
+
+package com.cdac.main;
+
+import java.util.Scanner;
+
+public class ScannerDemo {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in); 
+		int a;
+		System.out.println("Enter a number: ");
+		a=sc.nextInt();
+		System.out.println("The value entered is: "+a);
+		
+	}
+}
+
+CLASS
+= Data + Function
+= Data Member + Member functions
+
+A blueprint that represent the real world entity
+
+A class is representation, attributes and behavior into a single unit. That unit is called Class.
+Attributes-> data member
+Behaviour->member function.
+Object (a) is Stored in Heap Memory.
+Address-sc(call by reference)
+----------------------------------------------------------------------------------------------------------------------
+SUMMARY OF TODAY
+
+Revision of JDK, JRE, JVM, Data Types
+Java language Features, 
+Working with Data Types: 
+Structure of a Java Class, Defining Packages, 
+Operators (Unary, Binary, Arithmetic, Assignment, Compound, Relational, Logical, Equality)
+
+-----------------------------------------------------------------------------------------------------------------------
+H.W-> compare 4 numbers greater than less than (if-else). 
+1st try it inside main function
+2nd try out of main function
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration/Loops
+
+Entry check loop
+	• For loop
+	
+	for( start; end condition; increment)
+		{
+			statement
+		}
+	• For each method
+	• For each loop
+	• While loop
+	
+Exit check loop
+	• do while loop
+      -> execute once at least, then check for the condition.
+	Int i=0;
+	do {
+		System.out.println("Shruti");
+		i++;
+	}
+	while(i<10);
+
+
+OOPS
+
+7 elements or pillars:
+
+Major:
+	1. Abstraction
+	2. Encapsulation
+	3. Modularity
+	4. Hierarchy
+Minor:
+	1. Typing
+	2. Concurrency
+	3. Persistence
+----------------------------------------------------------------------
+
+Access Modifiers:
+	1. Public
+	2. Protected
+	3. Private
+	4. default
+	
+
+ENCAPSULATION:
+	
+Wrapping of the data with its get method(public method) and set method(public method). That class is known as encapsulated class and this is called Encapsulation.
+
+Local variable-that is declared inside method
+Instance variable-that is declared inside class.
+Instance Method -which are defined to work on instance variable.
+
+Class student
+{
+                                    Instance variable
+}
+Void gjhhd()
+{
+                                    Instance Method
+}
+
+
+
+<classname> S = New <object>()
+S= reference variable->address
+Object= Object variable->value
+
+It will create object of  class student into heap memory.
+JVM has all types of memory, register, heap, etc.
+In heap, the data is in unorganized way.
+Before creating object, create reference variable or class reference variable, not the instance variable(it is of object).
+
+
+Signature=Written type + method 
+
+Constructor:
+	• Special member function of a class, no written type, purpose: giving address to the instance variable and initialization of thenm in the heap .
+	• Constructor can have parameter.
+	• Types:
+		a. Default: Introduced by compiler.
+		b. User-defined constructors: name should be same as class name.
+			i. Parameterized:
+			ii. Copy:
+			iii. Virtual Constructor:
+	
+	• Irrespective of us placing constructor whenever class is called again constructor is invoked/called.
+
+	• Constructor Overloading: when we define a constructor more than once in the same class. Complier executes. JVM only calls the function/constructor.
+	
+	Ø Function Overloading/Early Binding/Compile time polymorphism: when we define the function in the same class more than once, but with different parameters.(compiler decides, which function to be called)
+	
+	Ø Function Overriding/Late Binding/Run Time polymorphism:(JVM decides, during runtime, which function to be called)
+Note:
+Java program is running on JVM. It provide, screen, memory, input with socket 
+Compiler creates bite code which is stored/execute in the form of stack i.e. LIFO.
+
+Collection: Object of any type is stored in heap.
+
+DATA ABSTRACTION:  
+	○ Declaring the method with parameter in one class, defining the functionality in another class, and calling the methods in another classes.  
+	○ To preserve the data/for the purpose of data privacy/data security. 
+
+Note:
+Java reflection: is a api, through which can examine run time behavior of a classes. It can call hundreds method. Just you need the name. your security is get compromised. This is created for the purpose of hacking.
+
+Instance Block:
+
+
+
+
+reference	reference
+No pointer in java	
+No operator overloading	
+
+
+"this" Keyword: if you want to call instance method inside another instance method.
+It work to call method or as a reference. 
+It can work in 6 different types. 
+
+
+package com.cdac.main;
+
+public class ConsChain {
+	
+	
+	ConsChain(){
+		
+		System.out.println("no param");
+	}
+	
+	ConsChain(int x){
+		
+		this();
+		System.out.println("one param");
+	}
+	
+	ConsChain(int x, int y){
+		
+		
+		this (20);
+		System.out.println("two param");
+	}
+		
+
+	
+	public static void main(String[] args) 
+	{
+		
+		ConsChain c =new ConsChain(10,20);
+	
+	}
+
+
+}
+
+
+Question for Module End.: Expect the output type question.
+
+
+Exception Handling: Abnormal behaviour of execution
+Number format exception.
+Null exception.
+Shutting down  
+
+
+
+
+
+Day3
+
+Friday, September 22, 2023
+9:26 AM
+
+
